@@ -5,11 +5,11 @@
 ###### Создаем скрипт
 * nano /opt/watchlog.sh
 ###### Создаем  unit для сервиса
-*nano /etc/systemd/system/watchlog.service
+* nano /etc/systemd/system/watchlog.service
 ###### Создаем  unit для таймера
-*nano /etc/systemd/system/watchlog.timer
+* nano /etc/systemd/system/watchlog.timer
 ###### Стартуем таймер
-*systemctl start watchlog.timer
+* systemctl start watchlog.timer
 #### Результат крона на скриншоте
 
 #### Ставим spawn-fcgi и переписываем init-скрипт на unit-файл
