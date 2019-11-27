@@ -65,3 +65,11 @@ Nov 25 15:52:58 srv-devops-omk systemd[1]: Started Spawn-fcgi startup service by
 #### Создем шаблон файла конфигурации
 * nano /etc/systemd/system/httpd-first
 * nano /etc/systemd/system/httpd-second
+* nano /etc/httpd/conf/first.conf
+* nano /etc/httpd/conf/second.conf
+
+#### Делаем юниты
+cp /etc/systemd/system/httpd-first /etc/systemd/system/httpd@first.service
+cp /etc/systemd/system/httpd-second /etc/systemd/system/httpd@second.service
+
+### Скриншот с результатм запуска двух апачей на скриншоте
